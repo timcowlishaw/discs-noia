@@ -1,0 +1,14 @@
+:80 {
+  defender garbage {
+    ranges aws aws-eu-west-1 aws-us-east-1 aws-us-west-1 azurepubliccloud openai deepseek gcloud githubcopilot # Add 172.19.0.0/16 for local testing
+  }
+  file_server
+}
+
+:443 {
+  defender garbage {
+    ranges aws aws-eu-west-1 aws-us-east-1 aws-us-west-1 azurepubliccloud openai deepseek gcloud githubcopilot
+  }
+  tls {$TLS_EMAIL}
+  file_server
+}

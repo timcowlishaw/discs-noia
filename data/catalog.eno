@@ -1,0 +1,16 @@
+title: Discs NoIA
+base_url: https://noia.timcowlishaw.cat
+language: ca
+
+label_mode
+home_image:
+description = Una noia trencant un ordenador amb un bastó
+file = discs_noia.jpg
+
+-- synopsis
+Músic per a les persones, no per a les màquines.
+-- synopsis
+
+theme:
+base = light
+
