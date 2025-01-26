@@ -10,7 +10,7 @@ A no-AI netlabel: A [Faircamp](https://codeberg.org/simonrepp/faircamp) site, se
 
 You'll need [docker](https://www.docker.com) installed.
 
-Your faircamp site lives in `data/` - Fork the repo, [edit catalog.eno to taste](https://simonrepp.com/faircamp/manual/catalog-catalog-eno.html), and start adding music and metadata in directories underneath, [following the Faircamp instruction](https://simonrepp.com/faircamp/manual/getting-started.html).
+Your faircamp site lives in `data/` - Fork the repo, [edit catalog.eno to taste](https://simonrepp.com/faircamp/manual/catalog-catalog-eno.html), and start adding music and metadata in directories underneath, [following the Faircamp instructions](https://simonrepp.com/faircamp/manual/getting-started.html).
 
 Copy `env.example` to `.env` and edit to add the email address you want to use for SSL certificates in the `TLS_EMAIL` variable.
 
