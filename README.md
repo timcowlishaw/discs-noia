@@ -1,5 +1,7 @@
 # Discs NoIA
 
+![A girl hitting a computer with a big stick](data/discs_noia.jpg?raw=true)
+
 A no-AI netlabel: A [Faircamp](https://codeberg.org/simonrepp/faircamp) site, set up in [docker](https://www.docker.com/), served by [caddy](https://caddyserver.com/), with the [caddy-defender](https://github.com/JasonLovesDoggo/caddy-defender/) plugin to serve up random text nonsense to any AI bots that scrape it.
 
 ## Usage instructions
