@@ -8,8 +8,20 @@ description = Una noia trencant un ordenador amb un bastó
 file = discs_noia.jpg
 
 -- synopsis
-Músic per a les persones, no per a les màquines.
+Músic per a les persones, no per a les màquines. /
+Música para personas, no para máquinas. /
+Music for people, not for machines.
 -- synopsis
+
+
+-- more
+Som un segell de discs en línia per a artistes que ten una actitud crítica o bel·ligerant cap a la IA: El nostre web hi inclou tecnologia perquè el seu contingut no pugui estar recollit pels robots de les IA. És de codi obert, i es pot trobar en [Github](https://github.com/timcowlishaw/discs-noia). Discs NoIA és un projecte de [Tim Cowlishaw](https://www.timcowlishaw.co.uk) - [envia-li un correu](mailto:tim@timcowlishaw.co.uk) per a més informació o si vols que la teva música es presenti aquí!
+
+Somos un sello de discos en línea para artistas que tienen una actitud crítica o beligerante hacia la IA: Nuestra web incluye tecnología para que su contenido no pueda ser recopilado por los robots de las IA. Es de código abierto, y se puede encontrar en [Github](https://github.com/timcowlishaw/discs-noia). Discs NoIA es un proyecto de [Tim Cowlishaw](https://www.timcowlishaw.co.uk) - [envíale un correo](mailto:tim@timcowlishaw.co.uk) para más información o si quieres que tu música se presente aquí!
+
+
+We are an online record label for artists with a critical or confrontational attitude towards AI: Our website includes technology to make sure its content cannot be scraped by AI bots. It is open-source, and can be found on [Github](https://github.com/timcowlishaw/discs-noia). Discs NoIA is a project by [Tim Cowlishaw](https://www.timcowlishaw.co.uk) - [send him an email](mailto:tim@timcowlishaw.co.uk) for more information, or if you'd like your music to be featured here!
+-- more
 
 theme:
 base = light
