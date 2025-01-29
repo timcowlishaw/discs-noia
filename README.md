@@ -12,6 +12,8 @@ You'll need [docker](https://www.docker.com) installed.
 
 Your faircamp site lives in `data/` - Fork the repo, [edit catalog.eno to taste](https://simonrepp.com/faircamp/manual/catalog-catalog-eno.html), and start adding music and metadata in directories underneath, [following the Faircamp instructions](https://simonrepp.com/faircamp/manual/getting-started.html).
 
+You'll also need to change your site URL in `data/catalog.eno` and in `config/Caddyfile` - just change every instance of `discs-noia.cat` to your hostname.
+
 Copy `env.example` to `.env` and edit to add the email address you want to use for SSL certificates in the `TLS_EMAIL` variable.
 
 To build and preview your site run `docker compose build && docker compose up` then navigate to `localhost:8080`

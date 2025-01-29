@@ -1,11 +1,26 @@
-:80 {
+
+
+www.discs-noia.cat:80 {
+  redir https://{host}{uri}
+}
+
+discs-noia.cat:80 {
+  redir https://www.{host}{uri}
+}
+
+discs-noia.cat:443 {
+  tls {$TLS_EMAIL}
+  redir https://www.{host}{uri}
+}
+
+*:80 {
   defender garbage {
     ranges aws aws-eu-west-1 aws-us-east-1 aws-us-west-1 azurepubliccloud openai deepseek gcloud githubcopilot # Add 172.19.0.0/16 for local testing
   }
   file_server
 }
 
-:443 {
+www.discs-noia.cat:443 {
   defender garbage {
     ranges aws aws-eu-west-1 aws-us-east-1 aws-us-west-1 azurepubliccloud openai deepseek gcloud githubcopilot
   }
