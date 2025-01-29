@@ -18,4 +18,8 @@ Copy `env.example` to `.env` and edit to add the email address you want to use f
 
 To build and preview your site run `docker compose build && docker compose up` then navigate to `localhost:8080`
 
-You can host your site anywhere that will host a docker container. I use [DigitalOcean](https://www.digitalocean.com/). Further deployment instructions to come!
+You can host your site anywhere that will host a docker container. I use kubernetes on  [DigitalOcean](https://www.digitalocean.com/). I do a first deploy by running `kubectl apply -f manifest.yml` (and then  `kubectl set env deployment discs-noia-deployment TLS_EMAIL=<my-email>`).
+
+I can then deploy changes to the site by rebuilding and pushing my docker container, then doing `kubectl rollout restart deployment discs-noia-deployment`
+
+

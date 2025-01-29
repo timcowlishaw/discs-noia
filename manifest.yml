@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: discs-noia-deployment
+  labels:
+    app: discs-noia-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: discs-noia-web
+  template:
+    metadata:
+      labels:
+        app: discs-noia-web
+    spec:
+      containers:
+      - name: discs-noia-web
+        image: registry.digitalocean.com/discs-noia/discs-noia-web
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        - containerPort: 443
+          protocol: TCP
+        - containerPort: 443
+          protocol: UDP
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: discs-noia-service
+  labels:
+    app: discs-noia-service
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+    name: "http"
+  - port: 443
+    protocol: TCP
+    targetPort: 443
+    name: "https-tcp"
+  - port: 443
+    protocol: UDP
+    targetPort: 443
+    name: "https-udp"
+  selector:
+    app: discs-noia-web
+  type: LoadBalancer
