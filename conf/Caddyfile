@@ -1,4 +1,11 @@
+noia.timcowlishaw.cat:80 {
+  redir https://www.discs-noia.cat{uri}
+}
 
+noia.timcowlishaw.cat:443 {
+  tls {$TLS_EMAIL}
+  redir https://www.discs-noia.cat{uri}
+}
 
 www.discs-noia.cat:80 {
   redir https://{host}{uri}
