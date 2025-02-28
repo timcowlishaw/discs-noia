@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: discs-noia-web
-        image: registry.digitalocean.com/discs-noia/discs-noia-web
+        image: registry.digitalocean.com/discs-noia/discs-noia-web:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
           protocol: TCP
