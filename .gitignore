@@ -2,3 +2,4 @@
 data/*
 !data/catalog.eno
 !data/discs_noia.jpg
+!data/*.woff

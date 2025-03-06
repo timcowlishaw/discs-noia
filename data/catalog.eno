@@ -1,7 +1,7 @@
 title: Discs NoIA
 base_url: https://discs-noia.cat
 language: ca
-
+embedding: enabled
 label_mode
 home_image:
 description = Una noia trencant un ordenador amb un bastó
@@ -25,4 +25,4 @@ We are an online record label for artists with a critical or confrontational att
 
 theme:
 base = light
-
+custom_font = Roboto-Regular-webfont.woff
